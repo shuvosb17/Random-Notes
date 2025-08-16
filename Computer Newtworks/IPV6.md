@@ -1,6 +1,3 @@
-Sure! Here are your notes with more detail, context, real-life examples, and relevant emojis:
-
----
 
 ## 1. Basics: IPv4 vs IPv6 🏠🔢
 
