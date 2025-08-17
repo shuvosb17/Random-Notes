@@ -1,6 +1,3 @@
-Here’s a detailed, easy-to-understand explanation of **MySQL Triggers**:
-
----
 
 ## What is a Trigger? 🛎️
 
