@@ -1,6 +1,3 @@
-Here’s a detailed, easy-to-understand explanation of **MySQL Stored Procedures**:
-
----
 
 ## What is a Stored Procedure? 🛠️
 
