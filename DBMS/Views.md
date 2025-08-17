@@ -1,6 +1,4 @@
-Here’s a detailed, easy-to-understand explanation of **MySQL Views**:
 
----
 
 ## What is a View? 👓
 
