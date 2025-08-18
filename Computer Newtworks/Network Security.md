@@ -1,7 +1,4 @@
- Got it ✅ I’ll turn the contents of your PDF into **detailed and easy-to-grab notes**.
-Here’s a structured summary you can study directly:
 
----
 
 # 🔐 Security Notes
 
@@ -124,4 +121,3 @@ Ciphertext = “X9@#F1”
 
 ---
 
-Do you want me to also create a **diagram-based cheat sheet** (like flowcharts for encryption, attacks, and digital signature process) so you can memorize it visually before your test?
