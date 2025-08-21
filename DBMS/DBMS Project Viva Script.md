@@ -1,5 +1,3 @@
-Based on your actual DBMS project code, here are the answers to all the viva questions:
-
 ## **Database Design & Schema Questions**
 
 **1. What is the primary purpose of your hospital management database?**
