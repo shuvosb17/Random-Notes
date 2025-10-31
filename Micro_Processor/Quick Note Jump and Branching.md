@@ -372,5 +372,93 @@ END_IF:
 
 ---
 
-Would you like me to now **format this into a polished PDF study guide** (with color sections, diagrams of flag behavior, and space for your handwritten notes)?
-It’ll look like a mini “exam survival booklet.”
+Excellent — that’s a *perfect “concept-integration” question*:
+It combines **input**, **comparison (CMP)**, **conditional jumps**, and **output** — exactly the skills you’re expected to master.
+
+Below are **5 similar questions**, each requiring an *IF–ELSE style assembly solution* with **conditional jumps**, all at the same reasoning level as your given example.
+
+---
+
+## 🧩 Question 1
+
+### 👉 Problem Statement
+
+Write an assembly language program using **IF–ELSE (with conditional jumps)** to take a number as input from the user and **display its ASCII code only if the number is greater than 3 and less than 7**.
+Otherwise, do nothing.
+
+🧠 **Concepts Used:**
+
+* CMP instruction
+* JBE / JAE for range checking
+* Logical AND condition using two jumps
+* INT 21h for input/output
+
+---
+
+## 🧩 Question 2
+
+### 👉 Problem Statement
+
+Write an assembly program that **takes a single character input**.
+If it is a **lowercase letter (‘a’–‘z’)**, display the message `"Lowercase letter"`.
+Otherwise, display nothing.
+
+🧠 **Concepts:**
+
+* `CMP AL, 'a'` and `CMP AL, 'z'`
+* `JL` and `JG` to check range
+* `AND` condition simulation via two jumps
+* Display string via INT 21h
+
+---
+
+## 🧩 Question 3
+
+### 👉 Problem Statement
+
+Write an assembly program that **reads a character**.
+If the character is **‘Y’ or ‘y’**, display the message `"You pressed YES"`.
+Otherwise, display `"Program Terminated"`.
+
+🧠 **Concepts:**
+
+* OR condition (`JE` on two comparisons)
+* Jumps for branching to `THEN` and `ELSE` blocks
+* Multiple labels with JMP to structure the code
+
+---
+
+## 🧩 Question 4
+
+### 👉 Problem Statement
+
+Write an assembly program that **takes a signed number** in AX register.
+If AX < 0, **convert it to its absolute value** and display `"Negative number converted"`.
+Else, **display `"Number already positive"`**.
+
+🧠 **Concepts:**
+
+* Signed comparison → `JL`
+* `NEG AX` to flip sign
+* Two branches (IF and ELSE)
+* Message display with INT 21h
+
+---
+
+## 🧩 Question 5
+
+### 👉 Problem Statement
+
+Write an assembly program that **reads two numbers** (say AL and BL).
+If both numbers are **even**, display `"Both Even"`.
+Otherwise, display `"At least one is odd"`.
+
+🧠 **Concepts:**
+
+* Use `TEST` instruction with 01h to check even/odd
+* Compound condition using two comparisons (AND)
+* `JNZ` (jump if not zero) for odd detection
+* Nested IF–ELSE style control flow
+
+---
+
