@@ -461,4 +461,140 @@ Otherwise, display `"At least one is odd"`.
 * Nested IF–ELSE style control flow
 
 ---
+Perfect! Let’s solve all 5 questions in a **concise, IF–ELSE style** assembly format using **conditional jumps** and **DOS interrupts**, keeping them in the **same style as your uppercase example**.
+
+---
+
+## 🧩 Question 1 – Number between 3 and 7
+
+```asm
+MOV AH,1
+INT 21H            ; read number → AL
+CMP AL,'3'
+JLE END_IF         ; if AL <= '3', skip
+CMP AL,'7'
+JGE END_IF         ; if AL >= '7', skip
+MOV DL,AL
+MOV AH,2
+INT 21H            ; display character
+END_IF:
+```
+
+---
+
+## 🧩 Question 2 – Lowercase letter check (‘a’-‘z’)
+
+```asm
+MOV AH,1
+INT 21H            ; read character → AL
+CMP AL,'a'
+JL END_IF          ; if AL < 'a', skip
+CMP AL,'z'
+JG END_IF          ; if AL > 'z', skip
+MOV DX, OFFSET MSG
+MOV AH,09
+INT 21H            ; display string "Lowercase letter"
+END_IF:
+
+MSG DB 'Lowercase letter$'
+```
+
+---
+
+## 🧩 Question 3 – Check for ‘Y’ or ‘y’
+
+```asm
+MOV AH,1
+INT 21H            ; read character → AL
+CMP AL,'Y'
+JE YES
+CMP AL,'y'
+JE YES
+MOV DX, OFFSET NO
+MOV AH,09
+INT 21H            ; display "Program Terminated"
+JMP END_IF
+
+YES:
+MOV DX, OFFSET YES_MSG
+MOV AH,09
+INT 21H            ; display "You pressed YES"
+
+END_IF:
+
+YES_MSG DB 'You pressed YES$'
+NO      DB 'Program Terminated$'
+```
+
+---
+
+## 🧩 Question 4 – Absolute value of signed number in AX
+
+```asm
+CMP AX,0
+JGE POSITIVE       ; if AX >=0, skip NEG
+NEG AX             ; AX = -AX
+MOV DX, OFFSET MSG_NEG
+MOV AH,09
+INT 21H
+JMP END_IF
+
+POSITIVE:
+MOV DX, OFFSET MSG_POS
+MOV AH,09
+INT 21H
+
+END_IF:
+
+MSG_NEG DB 'Negative number converted$'
+MSG_POS DB 'Number already positive$'
+```
+
+---
+
+## 🧩 Question 5 – Two numbers even check
+
+```asm
+MOV AH,1
+INT 21H            ; read first number → AL
+MOV BL,AL          ; store in BL
+MOV AH,1
+INT 21H            ; read second number → AL
+
+TEST AL,1          ; check LSB of second number
+JNZ ODD            ; if second number is odd, jump
+TEST BL,1          ; check LSB of first number
+JNZ ODD            ; if first number is odd, jump
+
+; Both even
+MOV DX, OFFSET BOTH
+MOV AH,09
+INT 21H
+JMP END_IF
+
+ODD:
+MOV DX, OFFSET AT_LEAST
+MOV AH,09
+INT 21H
+
+END_IF:
+
+BOTH DB 'Both Even$'
+AT_LEAST DB 'At least one is odd$'
+```
+
+---
+
+### ✅ Notes on style and logic
+
+1. **Input** always uses `AH=1 / INT 21H`.
+2. **Output** uses `AH=2` for single character or `AH=09` for string.
+3. **IF–ELSE logic** is implemented using:
+
+   * `JL`, `JG`, `JE`, `JLE`, `JGE`, `JNZ` etc.
+   * `JMP` to skip ELSE blocks when necessary.
+4. **Compound conditions** (AND / OR) are simulated using multiple `CMP`/`TEST` + conditional jumps.
+
+---
+
 
