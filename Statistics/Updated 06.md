@@ -241,4 +241,4 @@ Together, these two help paint the full picture:
 Skewness and Kurtosis are like the **mood and shape** of your data! 🧩
 They reveal whether your data is balanced, stretched, or unusually peaked — giving powerful insights for finance, research, and quality control.
 
-📘 **Next Up:** **Chapter 7 – Correlation and Regression** — Discover how two variables move together!
+📘 **Next Up:** **Chapter 7 – Correlation Analysis** — Discover how two variables move together!
