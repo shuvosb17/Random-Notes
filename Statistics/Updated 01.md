@@ -35,8 +35,8 @@ These four words help us know **who** or **what** we are studying.
 |                  POPULATION                |
 |     [All students in school]               |
 |      +----------------------------+        |
-|      |          SAMPLE             |        |
-|      | [50 chosen students]        |        |
+|      |          SAMPLE             |       |
+|      | [50 chosen students]        |       |
 |      +----------------------------+        |
 +--------------------------------------------+
 ```
