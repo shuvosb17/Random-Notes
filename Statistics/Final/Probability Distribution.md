@@ -6,8 +6,8 @@
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│         PROBABILITY DISTRIBUTIONS                    
-│         (Mathematical Models of Randomness)          
+│         PROBABILITY DISTRIBUTIONS                   |   
+│         (Mathematical Models of Randomness)         |    
 └─────────────────────────────────────────────────────┘
                         │
         ┌───────────────┼───────────────┐
@@ -136,7 +136,7 @@ Numbers → Math → Predictions!
         ┌───────┴───────┐
         │               │
    ┌────▼────┐     ┌────▼────┐
-   │DISCRETE │     │CONTINUOUS│
+   │DISCRETE │     │CONTINUOUS
    └────┬────┘     └────┬────┘
         │               │
         ▼               ▼
