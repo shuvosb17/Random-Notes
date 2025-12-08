@@ -2,13 +2,10 @@
 
 # 🌟 **REGRESSION ANALYSIS — Real-Life, Easy, Wide Explanation**
 
-Regression is basically about understanding:
-
 > **“How does one thing change when another thing changes?”**
 > and
 > **“Can we predict the future using past patterns?”**
 
-Let’s break everything down with *real human examples*.
 
 ---
 
