@@ -1,10 +1,8 @@
----
-
 # 🌟 **REGRESSION ANALYSIS — Real-Life, Easy, Wide Explanation**
 
-> **“How does one thing change when another thing changes?”**
-> and
-> **“Can we predict the future using past patterns?”**
+**“How does one thing change when another thing changes?”**
+and
+**“Can we predict the future using past patterns?”**
 
 
 ---
