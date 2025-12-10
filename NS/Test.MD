@@ -1,35 +1,35 @@
 ```mermaid
 flowchart LR
-    subgraph Client Layer
-        UI[Web Frontend<br>(React / Next.js)]
+    subgraph Client_Layer
+        UI[Web Frontend (React / Next.js)]
     end
 
-    subgraph API Layer
-        API[Go Backend API<br>(Gin/Echo)]
-        Auth[Auth & RBAC<br>(JWT + Refresh Tokens)]
+    subgraph API_Layer
+        API[Go Backend API (Gin/Echo)]
+        Auth[Auth & RBAC (JWT + Refresh Tokens)]
         Validator[Validation Layer]
         Logger[Logging & Error Handling]
     end
 
-    subgraph Application Core
+    subgraph Application_Core
         Visits[Visits Service]
         Prescriptions[Prescription Service]
         Patients[Patient Service]
         Doctors[Doctor Service]
-        Cache[Redis Cache<br>(Token Lookup, Rate Limiting)]
+        Cache[Redis Cache (Token Lookup, Rate Limiting)]
     end
 
-    subgraph DB Layer
-        DB[(PostgreSQL<br>(RDS/Local))]
+    subgraph DB_Layer
+        DB[(PostgreSQL - RDS / Local)]
     end
 
-    subgraph Cloud & Infra
-        ECR[(AWS ECR<br>Container Registry)]
-        ECS[(AWS ECS or EC2<br>Container Runtime)]
-        S3[(AWS S3<br>File Storage)]
-        CW[(CloudWatch<br>Logs & Metrics)]
+    subgraph Cloud_and_Infra
+        ECR[(AWS ECR - Container Registry)]
+        ECS[(AWS ECS or EC2 - Container Runtime)]
+        S3[(AWS S3 - File Storage)]
+        CW[(CloudWatch - Logs & Metrics)]
         LB[(Application Load Balancer)]
-        CI[GitHub Actions<br>CI/CD Pipeline]
+        CI[GitHub Actions - CI/CD Pipeline]
     end
 
     UI -->|HTTPS Requests| LB
