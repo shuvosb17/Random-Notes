@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     subgraph Client Layer
         UI[Web Frontend<br>(React / Next.js)]
@@ -58,3 +59,4 @@ flowchart LR
 
     CI --> ECR
     ECR --> ECS
+```
