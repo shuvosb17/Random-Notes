@@ -1,5 +1,6 @@
 ```mermaid
 flowchart LR
+
     subgraph Client_Layer
         UI[Web Frontend (React / Next.js)]
     end
@@ -32,7 +33,7 @@ flowchart LR
         CI[GitHub Actions - CI/CD Pipeline]
     end
 
-    UI -->|HTTPS Requests| LB
+    UI -->|HTTPS| LB
     LB --> API
 
     API --> Auth
